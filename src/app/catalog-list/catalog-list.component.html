@@ -1,0 +1,9 @@
+<div class="catalog-list">
+  <div class="catalog-item" *ngFor="let product of availableProducts">
+    <app-catalog-item
+      [product]="product"
+      [routerLink]="['/products', product.productId]"
+    ></app-catalog-item>
+  </div>
+  <div></div>
+</div>

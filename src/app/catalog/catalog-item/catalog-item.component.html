@@ -1,0 +1,17 @@
+<div>
+  <div class="product-card">
+    <img
+      src="{{ product.images[0] }}"
+      alt="{{ product.Title }}"
+      width="300"
+      height="300"
+    />
+    <p class="sale-price-text" *ngIf="product.salePrice">
+      Sale <span class="sale-price">{{ product.salePrice | currency }} </span>
+    </p>
+    <p class="regular-price-text">Reg {{ product.price | currency }}</p>
+    <p>
+      <span class="title">{{ product.title }}</span>
+    </p>
+  </div>
+</div>

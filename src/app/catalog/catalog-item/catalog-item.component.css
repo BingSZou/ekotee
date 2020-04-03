@@ -1,0 +1,28 @@
+.product-card {
+  margin: 1rem 0;
+  border-radius: 10px;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+img {
+  margin: 1rem;
+}
+
+.sale-price-text {
+  color: red;
+  margin: 0;
+}
+
+.sale-price {
+  font-size: 1.5rem;
+}
+
+.regular-price-text {
+  margin: 0;
+}
+
+.title {
+  max-width: 300;
+}

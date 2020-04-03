@@ -1,0 +1,20 @@
+.mini-cart-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 400px;
+  margin: 1rem;
+}
+
+.total-price {
+  margin: 0 2rem;
+}
+
+.total-items {
+  margin: 0 2rem;
+}
+
+i {
+  float: right;
+}

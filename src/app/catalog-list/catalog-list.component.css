@@ -1,0 +1,9 @@
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.catalog-item {
+  list-style-type: none;
+  display: inline-block;
+}
