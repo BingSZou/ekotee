@@ -10,11 +10,12 @@ import { AboutComponent } from "./about/about.component";
 const routes: Routes = [
   { path: "catalog-list", component: CatalogListComponent },
   { path: "products", component: CatalogListComponent },
-  { path: "tees", component: TeesComponent },
-  { path: "sweatshirts", component: SweatshirtsComponent },
-  { path: "about", component: AboutComponent },
+  { path: "category/tees", component: TeesComponent },
+  { path: "category/sweatshirts", component: SweatshirtsComponent },
+  { path: "category/about", component: AboutComponent },
   { path: "products/:id", component: ProductDetailsComponent },
   { path: "shopping-cart", component: ShoppingCartComponent },
+  { path: "about", component: AboutComponent },
   { path: "", component: CatalogListComponent }
 ];
 

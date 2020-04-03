@@ -1,7 +1,11 @@
 <nav class="site-navigation">
   <ul class="main-menu">
-    <li class="menu-item" *ngFor="let item of menuItems" [routerLink]="menu">
-      {{ item }}
+    <li
+      class="menu-item"
+      *ngFor="let item of menuItems"
+      [routerLink]="item.url"
+    >
+      {{ item.label }}
     </li>
   </ul>
 </nav>

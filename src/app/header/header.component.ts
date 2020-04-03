@@ -1,5 +1,7 @@
 import { Component, OnInit } from "@angular/core";
-import { of, Observable } from "rxjs";
+import { MenuService } from "../menu.service";
+import { IMenuItem } from "../models";
+import { Observable } from "rxjs";
 
 @Component({
   selector: "app-header",
@@ -7,10 +9,10 @@ import { of, Observable } from "rxjs";
   styleUrls: ["./header.component.css"]
 })
 export class HeaderComponent implements OnInit {
-  private menu$: Observable<string[]>;
-  constructor() {}
+  menu$: Observable<IMenuItem[]>;
+  constructor(private menuService: MenuService) {}
 
   ngOnInit() {
-    this.menu$ = of(["Tees", "Sweatshirts", "About"]);
+    this.menu$ = this.menuService.getMenus();
   }
 }

@@ -45,10 +45,6 @@ hr {
   font-size: 1rem;
 }
 
-.small-caption {
-  font-size: small;
-}
-
 .add-to-cart-section {
   display: flex;
   flex-direction: row;

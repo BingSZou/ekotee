@@ -6,8 +6,8 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./shopping-cart-mini.component.css"]
 })
 export class ShoppingCartMiniComponent implements OnInit {
-  private totalItems: number = 0;
-  private totalPrice: number = 0;
+  totalItems: number = 0;
+  totalPrice: number = 0;
   constructor() {}
 
   ngOnInit() {}

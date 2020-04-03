@@ -10,3 +10,7 @@ export interface Product {
   salePrice: number;
   sizes: string[];
 }
+export interface IMenuItem {
+  label: string;
+  url: string;
+}

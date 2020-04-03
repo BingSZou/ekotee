@@ -13,11 +13,11 @@ import { Product } from "src/app/models";
 })
 export class ProductDetailsComponent implements OnInit {
   private id: number;
-  private product: Product;
-  private product$: Observable<Product>;
-  private selectedImage$: Observable<string>;
-  private images: string[];
-  private alertMessage: string;
+  product: Product;
+  product$: Observable<Product>;
+  selectedImage$: Observable<string>;
+  images: string[];
+  alertMessage: string;
 
   constructor(
     private route: ActivatedRoute,
